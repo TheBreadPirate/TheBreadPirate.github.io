@@ -57,6 +57,7 @@ body{
     margin-top: -.6rem;
 	
     
+    
     background-color: #aa8d4a;
     background-image:linear-gradient(180deg, rgba(170, 141, 74, 0), rgba(170, 141, 74, 0) 95%, rgba(0, 0, 0, 0.69) 100%), url(../images/wood.webp);
     background-repeat: repeat;
@@ -87,7 +88,7 @@ body::-webkit-scrollbar-thumb{
     margin: 0;
     display:grid;
     grid-template-columns: 1fr 55rem 1fr;
-    grid-template-rows: 13.6rem auto 1fr;
+    grid-template-rows: 7.2rem auto 1fr;
     /* grid-template-areas: 
     "one two three"
     "four main six"*/
@@ -96,15 +97,18 @@ body::-webkit-scrollbar-thumb{
 #two {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    height: auto;
     }
 
 
 h1 img{
-	position:absolute;
-    max-width: 21rem;
+	position:relative;
+    
+    max-width: 28rem;
     height: auto;
-    margin-left: .3rem;
-    margin-top: .2rem;
+    
+    margin-left: -.5rem;
+    margin-top: -1rem;
     z-index: 1;}
 
 header{
@@ -116,12 +120,13 @@ header{
     align-items: flex-end;
     justify-content: flex-end;
     flex-wrap: wrap;
-    transform: translate(0, 8.1rem);
+    transform: translate(0, -5.5rem);
+    margin-right: .05rem;
     }
 
 #social img{
     margin-left: .6rem;
-    max-width: 3.5rem;
+    max-width: 2.7rem;
     /*float: right;
     position: relative;
     left: 0%;
@@ -192,7 +197,7 @@ header{
     margin-bottom: -5rem; 
     
     z-index: 2;
-    position: static;
+    position:static;
     
     grid-column: 2 / 3;
     grid-row: 2 / 3;
@@ -264,7 +269,6 @@ header{
 
 
 #mainwhite {
-    width: 100%;
     margin: 0 0 0 0;
     padding: 0px;
     /* width: 45rem;*/
@@ -329,57 +333,16 @@ article {
     max-width: 33rem;
     padding: 0 1rem 0 1.3rem;
     
-    font-size: .87rem;
+    font-size: .9rem;
     text-indent: 0rem;
     font-family: 'Roboto', sans-serif;
-    font-weight: 350;
+    font-weight: 400;
     
     text-align: left;
     }
 
 article p {
-    margin-bottom: 1.2rem;}
-
-#homearticle {
-    display:block;
-    box-sizing: border-box;
-    position: relative;
-    margin-top: 15.6rem;
-    margin-bottom: 1rem;
-    margin-left: ;
-    margin-right: ;
-
-    min-width: 100%;
-    
-    font-size: .85rem;
-    text-indent: 0rem;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 350;
-    
-    text-align: left;
-    }
-
-
-#homearticle div {
-    float: left;
-    box-sizing: border-box;
-    display: block;
-    width: 33.33%;
-    margin: 0 0 0 0;
-    padding: 0 1rem 0 1.3rem;
-    }
-    
-#homearticle #ZeroDiv {
-    width: 100%;
-    }
-    
-#homearticle img{
-    width: 90%; 
-    }
-
-#homearticle #SmallWidthHomeImg { /* Link Sitting Down */
-    display: none;
-    }
+    margin-bottom: .5rem;}
     
     
 article h2 {
@@ -396,21 +359,8 @@ article h2 {
 }
 
 
-#homearticle h2 {
-    font-family: 'Boulder';
-    font-weight: 10;
-    font-size: 2em;
-
-    line-height:  1.1em;
-    max-height: 2em;
-    letter-spacing: .01em;
-
-    color: #1c1c1c;
-    }
-
-
 article h3 {
-    margin-top: -.5rem;
+    margin-top: 0rem;
 
     font-size: .85rem;
     text-indent: 0rem;
@@ -425,19 +375,24 @@ article h4{
     font-style: italic;
     
     margin-top: 3.5em;
-    margin-bottom: .7em;}
+    margin-bottom: .6rem;}
 
+article ol li{
+    margin-bottom: .5rem;
 
+}
 
+article ol {
+    margin-top: -0rem;
+    margin-bottom: -1rem;
+    
+}
 
 article img {
     width: 90%;
     }
 
 #faqarticle img {
-    border-style: solid;
-    border-width: .01em;
-    border-color: #d3d3d3;
     
     box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.567);
     
@@ -480,7 +435,8 @@ font-weight: 500;
 
 article ul {
     text-indent: 0;
-    
+    text-align: left;
+    margin-top: -.3rem;
     }
     
 article a {
@@ -497,6 +453,17 @@ article a:hover {
     
     
 article .goto{    }
+    
+    
+    
+    
+    
+
+
+
+    
+</style>
+    
     
     
   
@@ -627,7 +594,7 @@ MAGIC and SUCH!
         margin: 0;
         display:grid;
         grid-template-columns: 1fr 45rem 1fr;
-        grid-template-rows: 13.6rem auto;
+        grid-template-rows: ;
         /* grid-template-areas: 
         "one two three"
         "four main six"*/
@@ -652,11 +619,9 @@ MAGIC and SUCH!
 /* Makes the Main Section 100% of Width  */
 
 
-    h1 a{
-        position: static;
-        display: block;
+    h1{
         
-        padding-right: .5rem;
+        padding-right: 5rem;
         
         width: 21rem;
         height: auto;
@@ -679,7 +644,6 @@ MAGIC and SUCH!
         margin: 0;
         display:grid;
         grid-template-columns: 1fr 100% 1fr;
-        grid-template-rows: 13.6rem auto;
         /* grid-template-areas: 
         "one two three"
         "four main six"*/
@@ -746,70 +710,6 @@ MAGIC and SUCH!
     #social {
         margin-right: 0;
         }
-
-
-    /* Home 742px */
-    #homearticle div {
-        float: left;
-        box-sizing: border-box;
-        min-width: 50%;
-        margin: 0 0 0 0;
-        padding: 0 1rem 0 1rem;
-        }
-        
-        #homearticle div h2 { 
-        display: block;
-        margin-bottom: .5rem;
-        }
-
-    #homearticle #ZeroDiv{
-        width: 100%;
-        }
-        
-    #ZeroDiv div{
-        min-width: 42%;
-        margin-left: 4%;
-        margin-right: 4%;
-        
-        padding: 0;
-        
-        float: clear;
-        
-        background-color: #ffffff;
-    
-        border-radius: .5rem;
-    
-        box-shadow: 0px 0px 3px rgba(128, 128, 128, 0.567);
-        }
-
-    #homearticle #FirstDiv {
-        width: 100%;
-        height: auto;
-        overflow: visible;
-        }
-
-
-    #homearticle #SmallWidthHomeImg { /* Link Sitting Down */
-        display: block;
-        
-        
-        float: right;
-        width: 12rem;
-        }
-    
-    
-    #homearticle #BigWidthHomeImg { /* Link Sitting Down */
-        display: none;
-        }
-    
-    #homearticle #SecondDiv {
-        margin-top: .6rem;
-        }
-
-    #homearticle #ThirdDiv {
-        margin-top: .6rem;
-        }
-
 
 
     /* Footer 742px*/
@@ -879,7 +779,7 @@ MAGIC and SUCH!
 
         
     article p {
-        display: inline-block;
+        display: block;
         
         }
                 
@@ -909,25 +809,33 @@ MAGIC and SUCH!
 @media screen and (max-width: 450px) {
 /* Makes the Main Section 100% of Width  */
 
+    h1 {width: 15rem;
+        padding-right: 0;}
 
-
-    h1 {
-        display: block;
-        width: 100%;
+    h1 img{
+        width: 15rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 0;
+        margin-top: ;
+        }
+    
+    #layout{
+        margin: 0rem;
+        display:grid;
+        grid-template-rows: 4rem 100% 1fr;
+        /* grid-template-areas: 
+        "one two three"
+        "four main six"*/
         }
 
-
-
-    h1 a img{
-        width: 97%;
-        }
     
    article h3 {
         text-align: center;
         }    
 
 
-    /* Home 450px */
+    /* 450px */
     
     #mainwhite {
     
@@ -942,71 +850,16 @@ MAGIC and SUCH!
     margin-top: 16rem;
     }
     
-    #homearticle {
-    margin-top: 14rem;
-    }
-    
-    
-    #homearticle div {
-        float: left;
-        box-sizing: border-box;
-        min-width: 50%;
-        margin: 0 0 0 0;
-        padding: 0 1rem 0 1rem;
-        }
+  
 
-    #ZeroDiv div{
-        min-width: 90%;
-        margin-top: 1rem;
-        }
-
-    #homearticle #FirstDiv {
-        width: 100%;
-        height: auto;
-        overflow: visible;
-        }
-
-    #homearticle #FirstDivText{ 
-        box-sizing: content-box;
-        display: inline;
-        width: auto;
-        height: auto;
-        }
     
-    #homearticle #FirstDiv p{ 
-        text-align: left;
-        position: relative;}
-
-    #homearticle #SmallWidthHomeImg { /* Link Sitting Down */
-        position: relative;
-        
-        float: right;
-        width: 8rem;
-        margin-top: 0rem;
-        margin-bottom: 0;
-        
-        }
-    
-    
-    #homearticle #SecondDiv {
-        margin-top: .6rem;
-        width: 100%;
-        }
-
-    #homearticle #ThirdDiv {
-        margin-top: .6rem;
-        width: 100%;
-        }
  
         
         
 /* Other Text */
 
 
-    #homearticle div h2 { 
-        display: block;
-        margin-bottom: 0rem;
-        }
+
 
 
     article h2 {

@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    
+<head>
+    
+<!-- The Ship's Manifest -->
+    <meta charset= "utf-8">
+    <title>Breads Youtube Tips</title>
+
+
+<!-- All of the Complicated META Stuff... You Wouldn't Get it -->
+    <meta name="description" content="The website of The Bread Pirate! The Zelda YouTuber who makes videos about Zelda fun facts.">
+    <meta name="author" content="The Bread Pirate">
+    <meta name="keywords" content="The Bread Pirate, Zelda, Trivia, Fun Facts, YouTube, Bread Pirate, Blog, FAQ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../youtubetips/hackerfavicon.png" type="image/png-icon" sizes="any">
+    
+    <style>
+
+
+        body{
+            background-color: #000000;
+            margin: 2rem;}
+
+    
+        body::-webkit-scrollbar{
+            width: .6rem;
+            }
+
+        body::-webkit-scrollbar-track{
+            background: rgb(121, 121, 121);
+            }
+
+        body::-webkit-scrollbar-thumb{
+            background:#adadad;
+            border-radius: 0px;
+            border-style: outset;
+            border-width: .15rem;
+            border-color: #dedede;}
+            
+        ::-webkit-scrollbar-thumb:hover
+        {
+          border-style: inset;
+          border-color: #d8d8d8;
+        }
+
+
+        /* Up */
+        ::-webkit-scrollbar-button:vertical:decrement
+        {
+          background:#9b9b9b;
+                    border-radius: 0px;
+                    border-style: outset;
+                    border-width: .15rem;
+                    border-color: #c7c7c7;
+                    background-image: url("arrowup.webp");
+        }
+
+        ::-webkit-scrollbar-button:vertical:decrement:hover
+        {
+          border-color: transparent transparent #505050 transparent;
+        }
+
+
+        /* Down */
+        ::-webkit-scrollbar-button:vertical:increment
+        {
+                    background:#9b9b9b;
+                    border-radius: 0px;
+                    border-style: outset;
+                    border-width: .15rem;
+                    border-color: #c7c7c7;
+        }
+
+        ::-webkit-scrollbar-button:vertical:increment:hover
+        {
+          border-color: #505050 transparent transparent transparent;
+        }
+
+
+
+        article{
+            background-color: black;  
+            color: #17ff31;
+            font-family: monospace;
+            max-width: 35rem;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: .85rem;
+            }
+    
+        #tips{
+            background-color: #ebebeb;
+            padding: .5rem 2rem 4rem 2rem;
+            color: #000000;
+            box-shadow: inset 0 0 .5rem #000000;
+            
+            font-family: serif;
+            line-height: 2rem;
+            font-size: 1rem;
+            }
+        
+        h1{
+            text-align: center;
+            color: #17ff31;
+            letter-spacing: ;
+            line-height: .8rem;
+            font-family: monospace;
+            font-size: .8rem;
+            width: 100%;
+            white-space: pre;
+            }
+        
+        p {
+            line-height: 1.4rem;
+            text-indent: -.7rem;
+            padding-left: .7rem;
+            }
+
+        #tips p {  
+            text-indent: 1rem;
+            font-size: .9rem;
+            padding-left: 0;}
+
+
+        article #tips #character-stats {
+        
+        background-color: #4b4b4b;
+        border-style: outset;
+        border-width: .3rem;
+        border-color: #b1b1b1;
+        padding-top: .6rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        
+        color:#ffffff;
+        }
+            
+        article #tips #character-stats p {
+            margin-top: 0rem;
+            text-indent: -.5rem;    
+            font-size: .9rem;
+            font-family: serif;
+        }    
+        
+        article #tips #character-stats ul {
+            margin-top: -.5rem;
+            line-height: 1.3rem;
+            margin-left: 1rem;
+        }
+        
+        article #tips #character-stats li {
+            list-style: square;
+            padding-left: 1rem;
+            text-indent: -1rem;}
+        
+        
+        article #tips #character-stats a {
+            color: white;
+            text-decoration: ;}
+        
+        article #tips #character-stats a:hover {
+            color: #17ff31;
+            text-decoration: underline;
+            }
+        
+        
+        
+        a {
+            color: #0031ff; 
+            font-weight: 600;
+            text-decoration: underline;}
+    
+        a:hover {
+            color: #00267c;
+            text-decoration: underline;
+            }
+        
+        #nav {
+            display:;
+            position: absolute;
+            font-family:monospace;
+            font-size: 1.4rem;
+            line-height: 2rem;}
+        
+        #nav a {
+            color: #17ff31; 
+            font-weight: 400;
+            text-decoration: none;
+            }
+    
+        #nav a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+            }
+        
+        #nav2 {display: none}
+        
+        
+        
+        img {
+            display: block; 
+            width: 89%; 
+            margin-left: auto; 
+            margin-right: auto;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: .17rem .18rem .15rem rgba(0, 0, 0, 0.71);
+}
+        
+                        @media screen and (max-width: 670px) {
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~Makes the Main Section 100% of Width~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+        
+        body{
+            margin: 0}
+
+        body::-webkit-scrollbar{
+            width: .6rem;
+            }
+            
+        body::-webkit-scrollbar-thumb{
+            border-width: .1rem;
+            }
+        
+        
+        /* Up */
+        ::-webkit-scrollbar-button:vertical:decrement
+        {
+                    border-width: .1rem;
+        }
+
+
+        ::-webkit-scrollbar-button:vertical:decrement:hover
+        {
+          border-color: transparent transparent #505050 transparent;
+        }
+
+
+
+        /* Down */
+        ::-webkit-scrollbar-button:vertical:increment
+        {
+                    border-width: .1rem;
+        }
+        
+        
+        
+        article{
+            
+            }
+
+        
+        h1{
+            letter-spacing: .04rem;
+            line-height: .5rem;
+            font-weight: 1000;
+            font-family: monospace;
+            font-size: .5rem;
+            width: 100%;
+            white-space: pre;
+            }
+        
+        #intro {
+            margin-left: 1rem;
+            margin-right: 1rem;
+            font-size: .9rem;
+            }
+        
+      
+            
+        #tips{
+            background-color: #ebebeb;
+            padding: .3rem 1rem 4rem 1rem;
+            color: #000000;
+            box-shadow: inset 0 0 .2rem #000000;
+            }
+            
+        #tips p {  
+            text-indent: 1rem;
+            font-size: .9rem;}
+            
+        
+        #nav {
+            display:NONE;
+            }
+        
+        #nav2 {
+            display: block;
+            text-align: center;
+            font-family: monospace;
+            line-height: 1.7rem;
+            margin-top: 1rem;
+            margin-bottom: 1.2rem;
+            font-size: 1.2rem;
+            }
+        
+        #nav2 a {
+            color: #000000; 
+            background: #17ff31;
+            font-weight: 400;
+            text-decoration: none;
+            padding: .1rem}
+    
+        #nav2 a:hover {
+            color: #000000;
+            text-decoration: underline;
+            }
+
+
+}
+        
+        
+                        @media screen and (max-width: 400px) {
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~Changes Font Size~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+          p {
+            line-height: 1rem;
+            font-size: .7rem;
+            }
+        
+        #tips {font-size: .8rem;}
+        
+        #tips p {
+            font-size: .8rem;
+            letter-spacing: 0rem;
+            line-height: 1.1rem;
+            }
+            
+}
+    </style>
+    
+    </head>
+    
+    <body>
+    
+    <div id="nav">
+    <a href="/index.html">◂Home</a>
+    
+    <br><a href="/textfiles/faq/faqmain.html">◂FAQ</a>
+    </div>
+    
+    
+    <h1>               _____       _            _____ _           
+/\_/\___  _   /__   \_   _| |__   ___  /__   (_)_ __  ___ 
+\_ _/ _ \| | | |/ /\/ | | | '_ \ / _ \   / /\/ | '_ \/ __|
+ / \ (_) | |_| / /  | |_| | |_) |  __/  / /  | | |_) \__ \
+ \_/\___/ \__,_\/    \__,_|_.__/ \___|  \/   |_| .__/|___/
+                                               |_|        </h1>
+
+    <div id="nav2">
+    <a href="/index.html">▸HOME◂</a>&emsp;&emsp;&emsp;&emsp;<a href="/textfiles/faq/faqmain.html">▸FAQ◂</a>
+    </div>
+
+<article>
+    
+    <div id="intro">
+    <p style="text-align: center; margin-bottom: -.1rem;">Nobody understands Youtube . . .</p>
+    <p>We could talk about it for hours and barely dent the iceberg.</p> <p>The algorithm is complicated and it can take years to find success (trust me, I know). Yet, YouTubing IS a skill. And like all skills it can be sharpened with practice and knowledge.</p>
+    
+    <p>Allow me to share a few of the tips that helped my channel stickout from the rest and pull ahead in the great rat race.</p> 
+    
+    <p>Disclaimer: Some of these tips will not fit your channel. That's alright. Use your judgement. You should ignore the tips which you believe are unhelp. </p>
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="tips">
+    
+    <h2></h2>
+    
+    
+ <h3>1. YouTube is a game&hellip;</h3> 
+ 
+<p> &hellip;or, to be more specific, it is an <strong><a href="https://en.wikipedia.org/wiki/Massively_multiplayer_online_role-playing_game">MMO-RPG</a></strong>. You need to level up, gain skills, explore the Internet, and choose a class. Actually, let me show you what I mean...</p>
+
+
+<div id="character-stats">
+<p style="display:block; text-align: center;"><strong>THE BREAD PIRATE</strong></p><p style="display:block; text-align: center;">Level 132,532 <em>(20,135,865 XP)</em></p>
+
+<p><strong>Class:</strong> Video Gaming Channel</p>
+<p><strong>Sub-Class:</strong> Legend of Zelda Content</p>
+<p>&emsp;<strong>Skills:</strong></p>
+    <ul>
+        <li>Editing Videos</li>
+        <li>Writing Scripts</li>
+        <li>Making Funny Voices</li>
+        <li>Researching Zelda History</li>
+        <li>Finding Memes</li>
+    </ul>
+
+
+<p>&emsp;<strong>Equipment:</strong>
+    <ul>
+        <li>Crappy Headphones</li>
+        <li>Precious Wii U</li>
+        <li>A +8 Year Old Snowball Microphone</li>
+        <li>Frankenstein Desktop</li>
+        <li>Speedy Laptop</li>
+        <li>Davinci Resolve</li>
+        <li>Paint Net</li> 
+    </ul>
+<p>&emsp;<strong>Party Members:</strong></p>
+
+    <ul>
+        <li><a href="https://www.youtube.com/@Drakenwild">Drakenwild</a></li>
+        <li><a href="https://www.youtube.com/@Swack">Swack!</a></li>
+        <li><a href=https://www.youtube.com/@Grazzyy"">Grazzy</a></li>
+        <li>Yoshi (My Cat)</li>
+    </ul>
+    
+    
+    <p>&emsp;<strong>Weaknesses:</strong></p>
+    <ul>
+        <li>Addicted to Civilization 6</li>
+        <li>Slow at Editing</li>
+        <li>No Girlfriend :(</li>
+    </ul>
+    
+</div>
+
+
+<p>These are my YouTube Channel Stats from 2023, but in video game terms!</p>
+<p>Your Subscriber Count is your Level</p>
+<p>Your Views are your XP</p>
+<p>And your Genre is your Class (ie. instead of Fighter, Wizard, Rogue... you choose Vlogger, Gamer, Essayist)</p>
+<p>YouTube isn't <em>like</em> a video game, it <em>is</em> a video game. Your goal is to level-up as much as possible, and you do that by crafting minions (videos) which collect XP (views) for you. And for approximately every 8-12 XP's you get, you gain one level (subscriber)</p>
+
+<br>
+
+<h3>2. Luck &ne; Success<strong><br /></strong></h3>
+<p>Many YouTubers will tell you that "you need to get lucky to be successful." But, this is a lie. This mindset will make you fail.</p>
+<p>Consider the definition of luck:</p>
+
+<div id="character-stats">
+<p><strong>luck</strong><br />/lək/<br /><em>Success or failure apparently brought by chance rather than through one's own actions.</em></p>
+</div>
+
+<p>Luck is random. It makes you feel helpless. Why would you rely on that?</p>
+<p>Drill this into your mind instead: "Luck sucks."</p>
+<p>You control more than you think! Your videos will be as successful as you make them.</p>
+<p>You can improve your thumbnails, learn better editing, collaborate with other YouTubers, ask your friends and family to subscribe, and MORE.&nbsp;</p>
+<p>You have control! Do not rely on luck!</p>
+<p>But, if you DO get lucky, then don't waste the opportunity. Capitalize on it by making more videos.</p>
+<p>Just don't rely on luck as your ONLY way to success.</p>
+<p>&nbsp;</p>
+
+
+<h3>3.&nbsp;Don't Be Entitled</h3>
+<p>You have as many subscribers as you deserve. If you&rsquo;re not happy with it, then get better or be patient.</p>
+<p>&nbsp;</p>
+<h3>4.&nbsp;If You Want Views, Get People Curious</h3>
+
+<p>People click on videos for one of two reasons&hellip;
+<br />- They Need Something
+<br />- They Want Something</p>
+<p>If people need your video, then you are making a tutorial. If people want your video, then you&rsquo;re making entertainment. These two types of videos require two approaches.</p>
+<p>When making a thumbnail for a &ldquo;Want&rdquo; Video you must focus on getting people curious.<br />- Ask a compelling question.<br />- Make a bold claim (the more outrageous it sounds the better)<br />- Show something strange (Ex. a video game glitch, or a strangely photoshopped image)</p>
+<p>On the other hand, if you are making &ldquo;Need&rdquo; videos, I have no advice. I haven&rsquo;t made many of those. You should study how other &ldquo;Need&rdquo; Youtubers are making videos if you want to learn more.</p>
+<p><span style="font-weight: 400;">&nbsp;</span></p>
+<h3>5.&nbsp;Be Attention Grabbing</h3>
+<p><span style="font-weight: 400;">Be attention-grabbing, but don&rsquo;t use clickbait.&nbsp;</span><span style="font-weight: 400;">Clickbait is when you lie or greatly exaggerate about the stuff in your video. Don&rsquo;t do that. </span></p>
+<p><span style="font-weight: 400;">You need to be honest&nbsp;in your thumbnail/title&nbsp;<strong>AND</strong>&nbsp;you need to spin your content in a way that gets people's attention. </span></p>
+<p><span style="font-weight: 400;">You will find success when you do both.</span><span style="font-weight: 400;"><br /></span></p>
+<p>&nbsp;</p>
+<h3>6. Ask for criticism.</h3>
+<p>Find a friend or family member who watches a lot of social media, then ask them for BRUTALLY HONEST advice. Additionally, you can find other small Youtubers and make friends with them. That way you can critique each other's work.&nbsp;<br /> Always.<br /> Ask.<br /> For.<br /> Criticism.<br /> It is one of the best ways to improve your content.</p>
+<p>If your friend tells you &ldquo;Your videos are too fast&rdquo; then try slowing them down. If your dad says, &ldquo;I don&rsquo;t understand what your thumbnail is about&rdquo; then try making it clearer.</p>
+<p>Example: My sister doesn't play Zelda games or make YouTube videos, but her advice on thumbnails almost always helps me.</p>
+<p>&nbsp;</p>
+
+<h3>7. Study Successful Youtubers</h3>
+<p>Pay attention to the things your favorite Youtubers do. Then, replicate those things. It’s NOT stealing if you put your own twist on it.</p>
+
+<p>Look at these two thumbnails…</p>
+
+<img style="width: 50%; float:left;" src="images/mythumbnail.png">
+<img style="width: 50%; float:right;" src="images/antsthumbnail.png">
+
+<p>The one on the left is from me and the one on the right is from the Minecraft YouTuber named <a href="https://www.youtube.com/watch?v=WCEu4DmB174" target="_blank">AntVenom</a>. I liked his thumbnail style so I used it as inspiration.</p> 
+<p>&nbsp;</p>
+<div id="character-stats">
+“It’s not stealing if you put your own twist on it.”<br>- The Bread Pirate (2021)
+</div>
+
+<p>&nbsp;</p>
+    
+    
+<h3>8. Be Concise</h3>
+<p>Don’t waste the viewer’s time.</p>
+
+<p>Slower or longers videos are fine! But never ramble. People appreciate when you are efficient with their time.</p>
+<p>If your video is long, then make sure you are telling a good story. Always tell interesting things.</p>
+<p>&nbsp;</p>
+      
+<h3>9. Make Thumbnails Understandable, Even When They are Small</h3>
+<p>When you are photoshopping a thumbnail, zoom out from time to time. Make your thumbnail look super teeny-tiny for a few seconds and then analyze it! That way you can see how your thumbnail looks on the Home Page.</p> 
+
+<p>Your thumbnail should be understandable even when it is tiny.</p>
+
+<p>You can also test your thumbnail with this handy <a href="https://thumbsup.tv/">website.</a> It shows you what your thumbnail will look like on YouTuber. I use it for all my thumbnails.</p>
+
+<p>&nbsp;</p>
+
+<h3>10. Always Give Credit</h3>
+<ul>
+<li> When you use music in a video, credit the artist in the description of the video.</li>
+<li>When you use another YouTuber’s research, give them credit.</li>
+<li>When you’re scrolling through reddit and see a post that inspires you to make a video, give that redditor credit.</li>
+</ul>   
+   
+<p>Your peers will appreciate the shoutout. You will avoid drama. Your viewers will see that you are genuine. It is a win-win.</p>
+
+<p>Always give people credit.</p>
+    
+<p>&nbsp;</p>
+
+<h3>11. Watch Out For Collaborative Channels</h3>
+<p>AKA: Channels that are run by multiple people at once.</p> 
+
+<p>They rarely work, especially when the collaborators already have personal channels. I’ve been a part of three separate collaborative channels. All but ONE of them died, and that’s because I took over the channel and turned it into The Bread Pirate. (Go to August 12th, 2017 on the Timeline to hear that story.)
+</p>
+<p>&nbsp;</p>
+
+<h3>12. Don’t Promise to Respond to Every Comment</h3>
+<p>Instead, say that you will "respond to as many comments as possible," or that you will reply to the first 50. Trust me on this one, you don't want to over promise. 😅</p>
+<p>&nbsp;</p>
+
+<h3>13. Expect NO Money</h3>
+<p>If you Youtube for the money… don’t.</p>
+
+<p>Youtube is unpredictable. It takes years to gain the skills you need. The equipment is expensive. It's not worth it for the money.</p> 
+
+<p>Money also won't motivate you to push through the hard times. It will only discourage you further.</p>
+
+<p>So, if you want to do Youtube, do for fun. That is your new starting point. Then… AND ONLY THEN... if you are good enough you might <em>accidentally</em> make money.</p>
+
+
+<p>Don't become a Youtuber because you want to make a quick buck. You will be disappointed. 
+</p>
+<p>&nbsp;</p>
+
+
+<h3>14. READ THIS Before You Buy Expensive Equipment!</h3>
+<p>Make sure you have fun making videos before you buy expensive computers, editing softwares, and cameras.</p>
+
+<p> Instead, start with your phone or free editing software.</p>
+<p>If you become a bigger Youtuber you will eventually need better tools. Just don’t worry about that until you are sure you have fun making videos.</p>
+
+
+<p>(Imagine how embarassing it would be if you spent hundreds of dollars on equipment and then discovered you dislike YouTubing!) </p>
+
+<p>The one exception might be a Capture Card. If you want to record footage directly from your gaming console then you will need one. My advice would be to start with the cheapest one possible and upgrade later.</p>
+
+<p>&nbsp;</p>
+
+<h3>15. * * * Think Like a Viewer! * * *</h3>
+<p>THIS IS CRITICAL!</p>
+<p>Some people might even say it is the most important piece of advice.</p>
+<p>When you make a video, think&hellip; &ldquo;Would a viewer on YouTube be interested in this?&rdquo; or better yet&hellip; &ldquo;If I were scrolling through YouTube and saw my video would I click it?&rdquo;</p>
+<p>Chances are&hellip; <strong>no</strong>. <br /><br />But that&rsquo;s okay! I was able to fix my channel and so can you. Just be critical of yourself.&nbsp;</p>
+<p>So, when a video gets fewer views than expected ask yourself... <p><em>Why would a viewer NOT want to click on this video</em>?</p> 
+
+<p>And when a video has lower watch time ask yourself, 
+
+<p><em>What made viewers leave this video</em>?</p>
+<p>The problem is NEVER the viewer. It is always you and your channel. I'm not being harsh. I am telling you the truth. And the sooner you accept the truth, the better.</p>
+<p>&nbsp;</p>
+
+
+<h3>16. Have Fun!</h3>
+<p>Like I mentioned in Tip #13: If you don’t have fun with YouTube, then you will get burnt out. Your content will also decline in quality.</p>
+
+<p>That being said… You will still need to do some hard work. But if you find Youtube fun, then you will be able to push past the hard parts and find success.
+</p>
+<p>&nbsp;</p>
+
+
+<!-- END OF TIPS ARTICLE! -->    
+    </div>
+
+<div id="intro">
+<p>That is the end of my tips.</p>
+
+<p>Godspeed on your YouTube journey! Remember, YOU are your best teacher. Be self critical, work hard, and study successful YouTubers. </p>
+
+<p>And ONE LAST TIP: Don’t make YouTube the center of your life. After all... it is just a game.</p>
+
+<p>&nbsp;</p>
+
+<p style="text-align: center; margin-bottom: -.1rem;">(Last Updated October 8, 2024)</p>
+</div>
+
+
+    
+    
+    </article>
+    </body>
+    </html>
