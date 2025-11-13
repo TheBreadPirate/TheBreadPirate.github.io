@@ -2,6 +2,19 @@
 <html lang="en">
     
     
+<!-- What should the lore be? 
+
+    - Captain's Log
+    - Timeline
+    - Rivals
+    - Allies
+    - Stories
+    - Tips For YouTubers
+    - 
+
+-->
+    
+    
 <head>
     
 <!-- The Ship's Manifest -->
@@ -21,66 +34,134 @@
     <link rel="stylesheet" href="styles/styles.css">
           
 <style>
-a {font-size: .95rem;}
-     
- 
-#ZeroDiv {
-    width: 100%;
- }
- 
- 
-#ZeroDiv div{
+    
+    #social img
+    {filter: saturate(0%) brightness(120%);
+    display: none;}
 
-    width: 41%;
-    margin-left: 4%;
-    margin-right: 4%;
-    margin-bottom: .5rem;
+    article p {
+        width: 100%;
+        text-overflow: clip;
+        margin-top: 0;
+        margin-bottom: .8rem;
+        }
+
+    article #bioflex {
         
-    background-color: #fffdf1;
+        width: 100%;
+        display: inline-flex;
+        gap: .8rem;
+        flex-direction: row;
+        justify-content:space-evenly;
+        flex-wrap: wrap;
     
-    border-radius: .5rem;
-    border-style: solid;
-    border-width: .15rem;
-    border-color: #e6e0ca;
-    
-    box-shadow: 0px 2px 4px rgb(78, 78, 78);
+        }
 
+
+    article #biobutton {
+        
+        display: block;
+        
+        height: auto;
+        width: 11rem;
+        
+        margin-bottom: 1rem;
+        
+        background-color: dimgrey, red;
+        background: linear-gradient( to bottom,
+        grey 0%,
+        grey 25%,
+        #cecece 25%,
+        #cecece 100%);
+        border-style: solid;
+        border-color: #a7a7a7;
+        border-width: .3rem;
+        border-radius: .2rem;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.54);
+        
+        transform: scale(1.00);
+        transition: all .08s ease-out;
+        filter:brightness(90%);
     }
 
+    article #biobutton:hover{
+        filter:brightness(100%);
+        transform: scale(1.07);
+        cursor: pointer;
+        }
 
 
-#ZeroDiv #logo {
+    article #biobutton a {
+        display: inline-block; 
+        height: 100%;"
+        width: 100%;
+        
+        font-size: .87rem;
+        text-indent: 0rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-style: italic;
+        color: black;
 
-    width: 52%;
-    margin-left: 24%;
-    margin-right: 24%;
-    padding-bottom: .3rem;
-
+        text-align: left;
+        text-decoration: none;
     }
+
+    article #biobutton a p {
+        display: block;
+        width: 90%;
+        margin-left: .5rem;
+        color: black;
+        }
     
-#ZeroDiv div {
-    transition: all .1s linear;
+    article #biobutton a img {
+    
+        display: block;
+        width: 3.5rem;
+        margin: 0 auto;
+        margin-top: .4rem;
     }
 
-#ZeroDiv div:hover{
-    transform: scale(1.02);
-    background-color: #ebe1d3;
-    border-color: #c6bc9a;
-    transition: all 0s ease-out;
-    }
-    
-#ZeroDiv div:active {
-    transform: scale(1);
-    background-color: #c9c2b7;
-    border-color: #b2a98b;
-    }
+    article a {color: #7cd1ff}
+    a:link { text-decoration: none;}
+    a:visited { text-decoration: none; }
+    article a:hover { text-decoration: none; color: #1391d3;}
+    a:active { text-decoration: none; }
     
     
-article p {
-    margin-bottom: .1rem;
+/* 🌑 🌑 🌑  🌑 🌑 🌑 Dark Mode Theme For Home Page 🌑 🌑 🌑 🌑 🌑 🌑 */
+
+   #mainwhite { background-image: linear-gradient(to bottom, #505050 0%, #2e2e2e 80%, #191919 100%);
+                border-color: #c1c1c1;}
+   
+   #whitebar {  background-color: #c1c1c1;}
+   
+   #main #navigation{border-color: #c1c1c1; background: #383838;}
+   
+   #main #navigation div {border-color: #c1c1c1;
+   background-color: #676767;}
+   
+   body {background-image:linear-gradient(180deg, rgba(170, 141, 74, 0), rgba(170, 141, 74, 0) 95%, rgba(0, 0, 0, 0.69) 100%), url(../images/wooddark.webp);}
+   
+       article {
+    max-width: 40rem;
+    color: white;
+    margin-top: 3rem;
     }
+
+   
+   
+   
+@media screen and (max-width: 450px) {
+
+        article #hometext {max-width: 100%; margin: auto;}
+}
+
+
     
 </style>
+
+
 
 
 <!-- Going to the Island of Java! -->
@@ -106,7 +187,7 @@ article p {
 <div id="two">
 <header>
     <h1>
-    <a href="index.html"><img src="images/top_logo.webp" alt="The Bread Pirate written in big text!" title="Welcome to the home page. Ah... it truly is something special isn't it. It is the beginning of a grand adventure! 
+    <a href="index.html"><img src="images/top_logo.webp" alt="The Bread Pirate written in big text!" title="Welcome to the home page. Ah... it sure is special isn't it? It is the beginning of a grand adventure! 
     
 Who knows what exciting and exotic things we will find once we click one of these buttons!"></a>
     </h1>
@@ -151,8 +232,8 @@ Who knows what exciting and exotic things we will find once we click one of thes
         <a href="index.html" title=
         "What are you trying to click this for? It takes you to the home page and you are already on the home page!"><div id="homenav">Home <br><img src="images/Home_Icon.webp" alt="Home Icon"></div></a>
         
-         <!--archive-->
-        <a href="textfiles/library/librarymain.html"><div>Library<br><img src="images/Blog_Icon.webp" alt="Pencil Icon"></div></a>
+         <!--lore-->
+        <a href="textfiles/lore/loremain.html"><div>Lore<br><img src="images/Blog_Icon.webp" alt="Pencil Icon"></div></a>
         
          <!--faq-->
          <a href="textfiles/faq/faqmain.html"><div>FAQ<br><img src="images/FAQ_Icon.webp" alt="Question Mark Icon"></div></a>
@@ -178,89 +259,72 @@ Who knows what exciting and exotic things we will find once we click one of thes
 
 <!-- articles and blog stuff goes here-->
 
-<article id="homearticle">
-
-
-
-<h2 style="font-size: 1.4rem; padding-top: .5rem;">YouTube Channels...</h2>
-
-<div id="ZeroDiv">
-
-
-<a href="https://www.youtube.com/thebreadpirate">
+<article>
 <div>
-<img 
-id="logo" 
-src="images/gaming_channel.webp" 
-alt="A link to my channel for all things Zelda"
->
-</div></a>
 
 
-<a href="https://www.youtube.com/channel/UCJ2gvOTa8i0oFPQjPVQ0oAg/videos"
-><div>
-<img id="logo" 
-src="images/vlogging_channel.webp"
-alt="A link to a channel about myself."
->
-</div></a>
+<h2 style="color: #ff7906; 
+    color: #ffffff; text-shadow: .2rem .15rem .05rem rgba(0, 0, 0, 0); font-weight: 0; font-size: 2rem; text-align: center; margin-top: -.5rem; margin-bottom: 1.5rem;">
+Welcome To Bread's Website
+</h2> 
+<h3 style="margin-top: -1.5rem; margin-bottom: 1.5rem; text-align: center;">(Here are my links!)</h3>
+
+
+<div id="bioflex">
+
+<div id="biobutton">
+    <a href="https://www.youtube.com/@TheBreadPirate"><img src="images/YouTube_Link.webp">
+         <p>Here is my YouTube Channel where I talk about the Zelda Series!<br> (It's the main attraction.)</p></a></div>
+
+
+<div id="biobutton">
+    <a href="https://discord.com/invite/MbwrRhy"> <img src="images/Discord_Link.webp">
+        <p>Talk to me and meet other Zelda fans on the Discord Server!</p></a>
+    </div>
+
+
+<div id="biobutton">
+    <a href="https://www.instagram.com/burtbrewster/"><img src="images/Instagram_Logo.webp">
+        <p>A place where I share personal pictures and stories. (Often featuring my pets.)</p></a>
+    </div>
+    
+<div id="biobutton">
+    <a href="https://www.youtube.com/@BurtonBrewster"><img src="images/YouTube_Link.webp" style="filter: invert(100)">
+    <p>My secondary YouTube channel for skits, talent shows, and school work. </p></a> </div>
+         
+<div id="biobutton"><address>
+    <a href="/textfiles/contact/contact.html"><img src="images/Email_Logo.webp">
+         <p>Find my contact info here. (Emails &amp; Discord DM's)</p></a> </address></div>
 
 
 
 </div>
-<br><br><br>
+    
 
+<div id="hometext"; style="width: 25rem; margin: auto;">
 
-<div id="FirstDiv">
+<h2 style="text-align: center; color: white;">Who is <span style="color: #f79188; ">The Bread Pirate?</span></h2>
+        
+        <p> My name is The Bread Pirate (or Burton Brewster in real life).</p>
+        
+        <p>I am a Zeltuber! That means  I make videos about the <em>Legend of Zelda Franchise,</em> the famous action/adventure video game series developed by Nintendo.</p>
+        
+        <p>I focus on the history of the Zelda Series and trivia pertaining to it. But I also do skits and gameplay!</p> 
+        
+        <p>Some of my better known accomplishments include:</p>
 
-<h2 style="color:#0a8400">Welcome Aboard!</h2>
-
-
-<p><img id="SmallWidthHomeImg" style="z-index: 9999999;" src="images/Link_Sitting.webp" alt="Art of Link sitting among his items and potions." title=
-"Fun fact: When making a website you can put different images on on different layers so that they cover each other. The higher the number, the more stuff it will cover. So, if an image is on layer 5, then it will be placed above images on layer 4, 3, 2... and so on. 
-
-But, this image is on level 9999999!!! That way, nothing will ever cover it. It is invincible! Muh ha ha ha!!!">This website is the home of The Bread Pirate; the YouTuber who covers fun-facts about the Legend of Zelda video game series!
-<br><br>
-Everything you see on this website was coded by hand. So, please! Feel free to explore it to your hearts content, and keep your eyes peeled for secrets!</p>
-
-<p class="goto">&nbsp;<em>~ The Bread Pirate Burton</em></p>
-
-
-<img id="BigWidthHomeImg" style ="z-index: 9999999;" src="images/Link_Sitting.webp" alt="Art of Link sitting among his items and potions." title=
-"Fun fact, when you make a website you can pick which layer each image is on. So, if an image is on level 1, it will be covered images at level 2... and so on. 
-
-This image is on level 9999999!!! That way, nothing will ever cover it. It is invincible! Muh ha ha ha!!!">
-
-</div>
-
-
-
-<div id="SecondDiv">
-<h2 style="color:#0050be;">Fan Fiction!</h2>
-<p>Although I am busy with college, I have been thinking a lot about writing stories set inside a virtual fantasy world similar to Sword Art Online, but less edgy. There would be...</p>
-<ul>
-<li>Adventure!</li>
-<li>Mystery!</li>
-<li>Talking Cats!</li>
-<li>And Probably Other Things I Cannot Think of Right Now! Just assume it is super cool stuff...</li>
-<li>(Wow! That is super cool!)</li>
-</ul>
-<p>When I post it, (if I post it) it will be located at the Library Page...</p><br>
-<p class="goto"><a href="textfiles/blog/blogmain.html">Go to Library Page&hellip;</a></p><br><br>
-</div>
-
-
-<div id="ThirdDiv">
-<h2 style="color: #af0000">Hey! Listen?</h2>
-<p>Ever wondered why my user name is The Bread Pirate&hellip;</p>
-<p>Do you want tips about becoming a YouTuber&hellip;</p>
-<p>And are you curious about my VERY first video on YouTube from 2010?</p>
-<p>WONDER NO LONGER! All your questions will be answered in the mysterious and miraculous <em>FAQ</em>! &nbsp;</p>
-
+        <ul style="margin-top: -.2rem;">
+        <li style="margin-bottom: .5rem;">Inventing the Bread% Speedrun for Breath of the Wild</li>
+        <li style="margin-bottom: .5rem;">Discovering that Wings can be used infinitely when submerged in water (Tears of the Kingdom).</li>
+        <li style="margin-bottom: .5rem;">Analyzing the fortifications of Zelda towns.</li>
+        </ul>
+<p><img src="images/Link_Sitting.webp" style="float: right; width: 8rem">For more information about me, go to the FAQ! A magical place where your wildest dreams can come true.</p>
 
 <p class="goto">
 <a href="textfiles/faq/faqmain.html">Go to FAQ&hellip;</a>
 </p>
+
+</div>
 
 </div>
 
@@ -277,21 +341,6 @@ This image is on level 9999999!!! That way, nothing will ever cover it. It is in
 </div> <!-- end of mainwhite --> 
 </div> <!-- end of main -->
 
-    
-
-<!-- Radio -->
-
-<div id="six">
-
-
-</div>
-
-
-    
-
-<p id="radio" onclick="toggle_audio()">
-RADIO
-</p>
 
 
 <!--The Keel-->
@@ -319,13 +368,15 @@ RADIO
 
 <div>
 <p>
-Site last updated December 16, 2022 by The Bread Pirate
+Site last updated Oct 8th, 2024
 </p>
 
-<p>Message In A Bottle Icon By Sergey Demushkin</p>
+<p>Hand Coded by The Bread Pirate</p>
 
-<address>Contact Bread at: <a id="email" href="mailto:breadpiraterob@gmail.com">breadpiraterob@gmail.com</a></address>
+<br>
+<p style="font-size: .6rem;">Message In A Bottle Icon By Sergey Demushkin</p>
 </div>
+
 </footer>
     
 </div> <!-- end of layout -->
